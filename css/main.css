@@ -206,6 +206,7 @@ html {
     gap: var(--grid-gap);
     box-sizing: border-box;
     margin: 0 auto;
+    position: relative;
 }
 
 .todays_recipes_headline {
@@ -244,6 +245,15 @@ html {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+}
+
+.fit-contain {
+    object-fit: contain;
+    padding: 20px;
+}
+
+.fit-contain.bg {
+    background-color: var(--color-black);
 }
 
 .todays_recipe_content_block_text_top h5 {
@@ -599,6 +609,9 @@ footer {
 .footer-link {
     text-decoration: none;
     color: #373737;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
     &.white {
         color: #ebebeb;
