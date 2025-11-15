@@ -9,126 +9,128 @@
 </head>
 
 <body>
+    <div class="container">
+        <!-- navigation -->
+        <nav class="navigation fixed">
+            <div class="menu-container">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="clicked" href="search.html">Search</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
 
-</body>
-<div class="container">
-    <!-- navigation -->
-    <nav class="navigation fixed">
-        <div class="menu-container">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="recipe.html">Recipes</a>
-                </li>
-                <li>
-                    <a class="clicked" href="search.html">Search</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-
-    <div class="search_wrap">
-        <div class="search-box">
-            <h2>FULL SEARCH</h2>
-            <div>
-                <input type="search" name="" id="" class="search-input" placeholder="Search...">
-                <img class="search-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png"
-                    alt="">
             </div>
-            <p>Lets go already!</p>
-        </div>
-        <div class="category_filter_wrap">
-            <h2>Search filter: category</h2>
-            <div class="filters_wrap_radio">
-                <div class="left">
-                    <label for="seafood" class="basic_label">Seafood
-                        <input type="radio" name="seafood" id="seafood">
-                    </label>
-                    <label for="beef_pork" class="basic_label">Beef/Pork
-                        <input type="radio" name="beef_pork" id="beef_pork">
-                    </label>
-                    <label for="chicken" class="basic_label">Chicken
-                        <input type="radio" name="chicken" id="chicken">
-                    </label>
-                    <label for="snacks" class="basic_label">Snacks
-                        <input type="radio" name="snacks" id="snacks">
-                    </label>
+        </nav>
+
+        <div class="search_wrap search_wrap_search">
+            <div class="search-box">
+                <h2>FULL SEARCH</h2>
+                <div>
+                    <input type="search" name="" id="" class="search-input" placeholder="Search...">
+                    <img class="search-icon"
+                        src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png" alt="">
                 </div>
-                <div class="right">
-                    <label for="pasta" class="basic_label">Pasta
-                        <input type="radio" name="pasta" id="pasta">
-                    </label>
-                    <label for="vegetarian" class="basic_label">Vegetarian
-                        <input type="radio" name="vegetarian" id="vegetarian">
-                    </label>
-                    <label for="dessert" class="basic_label">Dessert
-                        <input type="radio" name="dessert" id="dessert">
-                    </label>
+                <p>Lets go already!</p>
+            </div>
+            <div class="category_filter_wrap">
+                <h2>Search filter: category</h2>
+                <div class="filters_wrap_radio">
+                    <div class="left">
+                        <label for="seafood" class="basic_label">Seafood
+                            <input type="radio" name="seafood" id="seafood">
+                        </label>
+                        <label for="beef_pork" class="basic_label">Beef/Pork
+                            <input type="radio" name="beef_pork" id="beef_pork">
+                        </label>
+                        <label for="chicken" class="basic_label">Chicken
+                            <input type="radio" name="chicken" id="chicken">
+                        </label>
+                        <label for="snacks" class="basic_label">Snacks
+                            <input type="radio" name="snacks" id="snacks">
+                        </label>
+                    </div>
+                    <div class="right">
+                        <label for="pasta" class="basic_label">Pasta
+                            <input type="radio" name="pasta" id="pasta">
+                        </label>
+                        <label for="vegetarian" class="basic_label">Vegetarian
+                            <input type="radio" name="vegetarian" id="vegetarian">
+                        </label>
+                        <label for="dessert" class="basic_label">Dessert
+                            <input type="radio" name="dessert" id="dessert">
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="results_wrap">
+            <div class="result">
+                <div class="search_category_title" data-category="seafood">Category <span
+                        data-category="seafood"><strong>SEAFOOD</strong></span></div>
+                <h3>SEARCH RESULT ONE</h3>
+                <p>
+                    This will be the excerpt from WordPress, and you can control several things here.
+                    Like the length of the text that is shown and multiple other things.
+                    Now i just writing stuff to fill it out, and the final three dots indicate there is more text...
+                </p>
+            </div>
+            <div class="result">
+                <div class="search_category_title" data-category="chicken">Category <span
+                        data-category="chicken"><strong>CHICKEN</strong></span></div>
+                <h3>SEARCH RESULT TWO</h3>
+                <p>
+                    This will be the excerpt from WordPress, and you can control several things here.
+                    Like the length of the text that is shown and multiple other things.
+                    Now i just writing stuff to fill it out, and the final three dots indicate there is more text...
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="footer-section-left">
+                    <div class="footer-social">
+                        <a href="#" class="footer-link"><img src="img/icons/youtube.png" alt="youtube_icon">YouTube</a>
+                        <a href="#" class="footer-link"><img src="img/icons/instagram.png"
+                                alt="instagram_icon">Instagram</a>
+                        <a href="#" class="footer-link"><img src="img/icons/facebook.png"
+                                alt="facebook_icon">Facebook</a>
+                    </div>
+                    <div class="footer-nav">
+                        <a href="#" class="footer-link">Home</a>
+                        <a href="#" class="footer-link">Recipe</a>
+                        <a href="#" class="footer-link">About</a>
+                    </div>
+                </div>
+                <div class="footer-mid"></div>
+                <div class="footer-section-right">
+                    <div class="footer-section-right-links">
+                        <a href="https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c"
+                            class="footer-link white">https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c</a>
+                        <a href="https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK"
+                            class="footer-link white">https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK</a>
+                    </div>
+                    <div class="footer-etsy-mark">
+                        <img src="https://static.thenounproject.com/png/853061-200.png" alt="">
+                        <p>
+                            Etsy is powered by 100% <br>
+                            renewable electricity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="results_wrap">
-        <div class="result">
-            <div class="search_category_title" data-category="seafood">Category <span data-category="seafood"><strong>SEAFOOD</strong></span></div>
-            <h3>SEARCH RESULT ONE</h3>
-            <p>
-                This will be the excerpt from WordPress, and you can control several things here. 
-                Like the length of the text that is shown and multiple other things. 
-                Now i just writing stuff to fill it out, and the final three dots indicate there is more text...
-            </p>
-        </div>
-        <div class="result">
-            <div class="search_category_title" data-category="chicken">Category <span data-category="chicken"><strong>CHICKEN</strong></span></div>
-            <h3>SEARCH RESULT TWO</h3>
-            <p>
-                This will be the excerpt from WordPress, and you can control several things here. 
-                Like the length of the text that is shown and multiple other things. 
-                Now i just writing stuff to fill it out, and the final three dots indicate there is more text...
-            </p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-wrap">
-            <div class="footer-section-left">
-                <div class="footer-social">
-                    <a href="#" class="footer-link"><img src="img/icons/youtube.png" alt="youtube_icon">YouTube</a>
-                    <a href="#" class="footer-link"><img src="img/icons/instagram.png" alt="instagram_icon">Instagram</a>
-                    <a href="#" class="footer-link"><img src="img/icons/facebook.png" alt="facebook_icon">Facebook</a>
-                </div>
-                <div class="footer-nav">
-                    <a href="#" class="footer-link">Home</a>
-                    <a href="#" class="footer-link">Recipe</a>
-                    <a href="#" class="footer-link">About</a>
-                </div>
-            </div>
-            <div class="footer-mid"></div>
-            <div class="footer-section-right">
-                <div class="footer-section-right-links">
-                    <a href="https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c"
-                        class="footer-link white">https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c</a>
-                    <a href="https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK"
-                        class="footer-link white">https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK</a>
-                </div>
-                <div class="footer-etsy-mark">
-                    <img src="https://static.thenounproject.com/png/853061-200.png" alt="">
-                    <p>
-                        Etsy is powered by 100% <br>
-                        renewable electricity.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
 </body>
 
 </html>
