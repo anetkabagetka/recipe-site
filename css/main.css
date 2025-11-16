@@ -251,6 +251,7 @@ html {
     height: fit-content;
     width: var(--width-12col);
     box-sizing: border-box;
+    z-index: 1;
 }
 
 .todays_recipes_content_block {
@@ -426,6 +427,7 @@ p[data-category="beefpork"] {
     gap: var(--grid-gap);
     box-sizing: border-box;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .ingredients_section h3 {
@@ -910,6 +912,61 @@ footer {
     width: 50%;
 }
 
+.info-kitchen-container strong::before {
+    width: 2px;
+    height: 10px;
+    background-color: #bf5b23;
+    display: inline-block;
+    margin-right: 10px;
+    content: "";
+}
+
+.category_section_icon_area p {
+    color: #ffffff;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: #373737;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: 2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #bf5b23;
+}
+
+.category_filter_wrap {
+    border-radius: 5px;
+}
+
+.circle-img {
+    position: absolute;
+    right: -200px;
+    top: 50px;
+    width: 900px;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+
 @media (width <=780px) {
     :root {
         /*Dimensions*/
@@ -962,6 +1019,10 @@ footer {
     .nieco_section_headline {
         font-size: 26px;
         text-align: center;
+    }
+
+    .circle-img {
+        display: none;
     }
 
     .kitchen_section {
@@ -1031,11 +1092,6 @@ footer {
 
     .footer-section-right {
         display: none;
-    }
-
-    footer {
-        z-index: 1;
-        position: relative;
     }
 
     .category_section_content_block_bottom_area_recipe {
